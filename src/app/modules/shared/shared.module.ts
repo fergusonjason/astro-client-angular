@@ -11,7 +11,11 @@ import { AstroFooterComponent } from './components/astro-footer/astro-footer.com
     AstroFooterComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+  ],
+  exports: [
+    AstroHeaderComponent,
+    AstroFooterComponent
   ]
 })
 export class SharedModule { }
