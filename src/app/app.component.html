@@ -1,3 +1,16 @@
 <astro-header></astro-header>
-Content goes here
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+</mat-toolbar>
+<mat-drawer-container>
+  <mat-drawer #drawer mode="side" color="primary">
+    Sidenav
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
+
 <astro-footer></astro-footer>
