@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-astro-footer',
+  selector: 'astro-footer',
   templateUrl: './astro-footer.component.html',
   styleUrls: ['./astro-footer.component.css']
 })
