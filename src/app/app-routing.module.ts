@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { CustomRoutes } from './modules/core/types/customroute.type';
 import { HomeComponent } from './modules/home/components/home/home.component';
 
-const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+
+
+const routes: CustomRoutes = [
+  { path: 'home', text: 'Home', component: HomeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 

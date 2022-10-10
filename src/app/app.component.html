@@ -1,14 +1,14 @@
 <astro-header></astro-header>
-<mat-toolbar color="primary">
+<mat-toolbar class="black-container">
   <button mat-icon-button (click)="drawer.toggle()">
     <mat-icon>menu</mat-icon>
   </button>
 </mat-toolbar>
 <mat-drawer-container>
-  <mat-drawer #drawer mode="side" color="primary">
-    Sidenav
+  <mat-drawer #drawer mode="side" class="black-container">
+    <astro-navigation></astro-navigation>
   </mat-drawer>
-  <mat-drawer-content>
+  <mat-drawer-content class="grey-container">
     <router-outlet></router-outlet>
   </mat-drawer-content>
 </mat-drawer-container>

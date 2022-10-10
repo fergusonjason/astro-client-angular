@@ -1,5 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
 
 
-html, body { height: 100%; }
+html, body { height: 100%;
+margin: 0 0 0 0;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.black-container {
+    background-color: black;
+    color: white;
+}
+
+.grey-container {
+    background-color: gray;
+    color: white;
+}
+
+.mat-sidenav {
+    width: 200px !important;
+};
+
+.header {
+    display: block;
+    align-items: center;
+    width: 100%;
+}
+
+.header h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.center {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+}
+
+.footer {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 0 0 !important;
+}
+
+.footer p {
+    width: 100%;
+    text-align: center;
+}
