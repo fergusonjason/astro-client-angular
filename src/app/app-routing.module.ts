@@ -7,6 +7,8 @@ import { HomeComponent } from './modules/home/components/home/home.component';
 
 const routes: CustomRoutes = [
   { path: 'home', text: 'Home', component: HomeComponent },
+  { path: 'gliese', text: 'Gliese',
+    loadChildren: () => import('./modules/gliese/gliese.module').then(m => m.GlieseModule) },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
