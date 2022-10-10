@@ -4,6 +4,7 @@ import { AstroHeaderComponent } from './components/astro-header/astro-header.com
 import { AstroFooterComponent } from './components/astro-footer/astro-footer.component';
 import { AstroNavigationComponent } from './components/astro-navigation/astro-navigation.component';
 import { AppRoutingModule } from 'src/app/app-routing.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -14,8 +15,9 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
     AstroNavigationComponent
   ],
   imports: [
-    AppRoutingModule,
+    //AppRoutingModule,
     CommonModule,
+    RouterModule
   ],
   exports: [
     AstroHeaderComponent,
