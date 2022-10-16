@@ -3,4 +3,11 @@
         <mat-label>Name</mat-label>
         <input matInput>
     </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Stellar Class</mat-label>
+        <mat-select>
+            <mat-option *ngFor="let stellar_class of $gliese.stellar_classes" [value]="stellar_class">{{ stellar_class.type }}</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <button mat-stroked-button color="secondary">Search</button>
 </form>
