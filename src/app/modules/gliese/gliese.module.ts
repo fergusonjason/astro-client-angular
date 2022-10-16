@@ -10,7 +10,7 @@ import { GlieseService } from './services/gliese.service';
 
 @NgModule({
   declarations: [
-    GlieseHomeComponent
+    GlieseHomeComponent,
   ],
   imports: [
     CoreModule,
